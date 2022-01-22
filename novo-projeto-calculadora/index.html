@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Project<span>Calculator</span>.</h1>
+        <nav class="menu">
+            <a href="#">GitHub</a>
+            <a href="#">Linkedin</a>
+            <a href="#">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        <section class="calculator">
+            <div class="nome"><h2>Calculator</h2></div>
+            <div id="result">
+
+            </div>
+            <div class="botoes">
+                <input type="button" class="buttom" value="C" onclick="clean()" style="background-color: #ff4444;">
+                <input type="button" class="buttom" value="&lt;" onclick="oneClear()" style="background-color: #ff4444;">
+                <input type="button" class="buttom" value="/" onclick="insert('/')" style="background-color: #ff4444;">
+                <input type="button" class="buttom" value="X" onclick="insert('*')" style="background-color: #ff4444;"> 
+            </div>
+            <div class="botoes">
+                <input type="button" class="buttom" value="7" onclick="insert('7')">
+                <input type="button" class="buttom" value="8" onclick="insert('8')">
+                <input type="button" class="buttom" value="9" onclick="insert('9')">
+                <input type="button" class="buttom" value="-" onclick="insert('-')" style="background-color: #ff4444;">
+            </div>
+            <div class="botoes">
+                <input type="button" class="buttom" value="4" onclick="insert('4')">
+                <input type="button" class="buttom" value="5" onclick="insert('5')">
+                <input type="button" class="buttom" value="6" onclick="insert('6')">
+                <input type="button" class="buttom" value="+" onclick="insert('+')" style="background-color: #ff4444;">
+            </div>
+            <div class="botoes">
+                <input type="button" class="buttom" value="1" onclick="insert('1')">
+                <input type="button" class="buttom" value="2" onclick="insert('2')">
+                <input type="button" class="buttom" value="3" onclick="insert('3')">
+                <input type="button" class="buttom" value="=" onclick="buttonEquality()" style="height: 4rem; position: absolute;
+                left: 69.5%; background-color: #ff4444;">
+            </div>
+            <div class="botoes">
+                <input type="button" class="buttom" value="0" onclick="insert('0')">
+                <input type="button" class="buttom" value="." onclick="insert('.')" style="width: 4.8rem; position: absolute;
+                left: 32.3%;
+                background-color: #439c9c;">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
